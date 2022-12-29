@@ -1,0 +1,25 @@
+# A partir das listas
+
+
+
+linguagens=['php','JavaScript']
+frases=['Eu amo ','Eu odeio ']
+
+
+# Use List Comprehension e obtenha a seguinte lista:
+
+
+
+# ['Eu amo php !', 'Eu odeio php !', 'Eu amo JavaScript !', 'Eu odeio JavaScript !']
+
+
+# Por fim, tente implementar uma solução sem List Comprehension.
+lista=[]
+for i in linguagens:
+    for x in frases:
+        if x!=i:
+            lista.append((x+i+"!"))
+
+print(lista)
+
+print([(x+y+"!") for y in linguagens for x in frases if x!=y])

@@ -1,0 +1,30 @@
+# A partir da lista
+
+frutas=['  BaNanA    ', '  morangO ', ' mAçã  ','   MeLão']
+# Use List Comprehension e obtenha as seguintes listas:
+
+
+
+# ['Eu gosto de Banana !', 'Eu gosto de Morango !', 'Eu gosto de Maçã !', 'Eu gosto de Melão !']
+# ['BANANA', 'MORANGO', 'MAÇÃ', 'MELÃO']
+# ['banana', 'morango', 'maçã', 'melão']
+
+lista1=[]
+lista2=[]
+lista3=[]
+
+for i in frutas:
+    lista1.append(f"Eu gosto de {i.title().strip()}!")
+    lista2.append(i.upper().strip())
+    lista3.append(i.lower().strip())
+
+print(lista1)
+print(lista2)
+print(lista3)
+
+
+print([f"Eu gosto de {i.title().strip()}!!" for i in frutas])
+print([i.upper().strip() for i in frutas])
+print([i.lower().strip() for i in frutas])
+
+

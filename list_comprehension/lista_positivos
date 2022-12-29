@@ -1,0 +1,17 @@
+# A partir da lista
+
+lista=[3, -31, -70, -55, 1, -76, -15, -14, -75, -53, 42, 12, -27, -92, -83, -9, 6, 9, -46, -48, -17, -69, 15, -1, 9, 6, -89, -36, 15, -24, 49, -31, -25, -71, 43, 20, -67, 18, -3, 8, -60, -73, 22, -52, 5, -15, 48, 21, -23, 6, 0]
+# Use List Comprehension e obtenha:
+
+
+# [3, 1, 42, 12, 6, 9, 15, 9, 6, 15, 49, 43, 20, 18, 8, 22, 5, 48, 21, 6, 0]
+
+
+resultado=[]
+for i in lista:
+    if i >0:
+        resultado.append(i)
+
+print(resultado)
+
+print([i for i in lista if i > 0])

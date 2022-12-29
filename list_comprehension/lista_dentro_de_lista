@@ -1,0 +1,20 @@
+# A partir da lista
+
+matriz=[[1,2,3], [4,5,6], [7,8,9]]
+# Use List Comprehension e obtenha:
+
+# [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+# Na sequência utilize a função sum() para obter a soma destes números.
+lista = []
+for i in matriz:
+    for x in i:
+        lista.append(x)
+
+print(lista)
+print(sum(lista))
+
+
+lista=([y for x in matriz for y in x ])
+print(f'A lista é {lista} e a soma dela é  {sum(lista)} ')
