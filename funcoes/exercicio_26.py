@@ -18,13 +18,14 @@ valores=[
 # {'Receita produto A': [1001.19, 1500.55, 857.94, 110.33, 29.45, 33.55, 44.7, 430, 120, 177],
 #  'Receita produto B': [20, 33.5, 91.4, 4.5, 111, 230, 900, 801.2, 101.4, 202.6]}
 
-print(dict(zip(chaves,valores)))
+dicionario= (dict(zip(chaves,valores)))
 
 
 # b) construa um DataFrame com a biblioteca pandas a partir do dicionário criado,
 #  use o construtor DataFrame() e passe a lista anos com index. Resultado esperado:
 
-
+data_frame=pd.DataFrame(dicionario,index=anos)
+print(data_frame)
 
 
 # c) crie uma lista de tuplas que armazene a receita total dos produtos A e B por ano.
